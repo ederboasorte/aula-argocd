@@ -5,6 +5,7 @@ namespace: fiap-todo-prod
 
 resources:
 - ../../base
+- ecr-secret.yaml
 
 patchesStrategicMerge:
 - deployment-patch.yaml

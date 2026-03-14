@@ -6,6 +6,8 @@ spec:
   replicas: 3
   template:
     spec:
+      imagePullSecrets:
+        - name: ecr-registry-secret
       containers:
       - name: fiap-todo-api
         env:
