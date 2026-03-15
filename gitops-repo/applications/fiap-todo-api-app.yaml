@@ -15,7 +15,7 @@ metadata:
   name: fiap-todo-api                    # Nome da aplicação no ArgoCD
   namespace: argocd                      # Namespace do ArgoCD
   labels:
-    app: fiap-todo-api                   # Label da aplicação
+    app: fiap-todo                   # Label da aplicação
   
   # ============================================
   # FINALIZERS
@@ -36,7 +36,7 @@ spec:
   # Define de onde vêm os manifests
   source:
     repoURL: https://github.com/ederboasorte/aula-argocd.git  # URL do repositório Git
-    targetRevision: HEAD                 # Branch/tag/commit (HEAD = última versão da branch)
+    targetRevision: main                 # Branch/tag/commit (HEAD = última versão da branch)
     path: gitops-repo/applications/fiap-todo-api/overlays/production   # Path dos manifests no repo
   
   # ============================================

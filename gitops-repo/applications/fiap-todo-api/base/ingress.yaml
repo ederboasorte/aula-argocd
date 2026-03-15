@@ -1,0 +1,38 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: fiap-todo-api
+  namespace: fiap-todo-prod
+  annotations:
+    nginx.ingress.kubernetes.io/proxy-connect-timeout: "30"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "300"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "300"
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: fiaptodo.demo.com
+    http:
+      paths:
+      - path: /health
+        pathType: Prefix
+        backend:
+          service:
+            name: fiap-todo-api-service
+            port:
+              number: 80
+
+      - path: /api/todos
+        pathType: Prefix
+        backend:
+          service:
+            name: fiap-todo-api-service
+            port:
+              number: 80
+
+      - path: /api/stats
+        pathType: Prefix
+        backend:
+          service:
+            name: fiap-todo-api-service
+            port:
+              number: 80

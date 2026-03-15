@@ -13,8 +13,10 @@ kind: Kustomization
 # ============================================
 # Lista de manifestos Kubernetes a serem aplicados
 resources:
+- ecr-secret.yaml                        # cria a secret
 - deployment.yaml                        # Deployment da aplicação
 - service.yaml                           # Service para expor a aplicação
+- ingress.yaml                           # Cria o ingress 
 
 # ============================================
 # LABELS COMUNS

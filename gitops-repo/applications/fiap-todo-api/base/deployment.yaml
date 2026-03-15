@@ -1,4 +1,4 @@
-# ============================================
+## ============================================
 # DEPLOYMENT: FIAP Todo API
 # ============================================
 # Deployment base para a aplicação Todo API
@@ -60,7 +60,7 @@ spec:
         - name: NODE_ENV
           value: "production"            # Ambiente de execução
         - name: VERSION
-          value: "v1.0.1"                # Versão da aplicação
+          value: "v1.0.0"                # Versão da aplicação
         - name: DEPLOYMENT_TYPE
           value: "gitops"                # Tipo de deployment
         
