@@ -41,6 +41,16 @@ let todos = [
     category: 'work',
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString()
+  },
+  {
+    id: 3,
+    title: 'Yasmim Araujo Brandao',
+    description: 'Menina linda que estuda no mendel',
+    completed: false,
+    priority: 'linda',
+    category: 'estudante',
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString()
   }
 ];
 
