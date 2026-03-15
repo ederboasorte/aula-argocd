@@ -39,8 +39,6 @@ spec:
         app: fiap-todo-api               # Label aplicada aos pods
     
     spec:
-      imagePullSecrets:
-        - name: ecr-registry-secret
       # ============================================
       # CONTAINERS
       # ============================================
