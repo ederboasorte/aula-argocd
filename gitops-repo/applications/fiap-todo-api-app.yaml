@@ -35,7 +35,7 @@ spec:
   # ============================================
   # Define de onde vêm os manifests
   source:
-    repoURL: https://github.com/josenetoo/fiap-dclt-aula04  # URL do repositório Git
+    repoURL: https://github.com/ederboasorte/aula-argocd.git  # URL do repositório Git
     targetRevision: HEAD                 # Branch/tag/commit (HEAD = última versão da branch)
     path: gitops-repo/applications/fiap-todo-api/overlays/production   # Path dos manifests no repo
   
